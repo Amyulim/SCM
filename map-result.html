@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Colorlib">
+  <meta name="description" content="#">
+  <meta name="keywords" content="#">
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="#">
+  <!-- Page Title -->
+  <title>SCM Areial Database</title>
+  <!-- Website Icon -->
+  <link rel="icon" href="images/logo-.png" type="image/gif" sizes="16x16">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Simple line Icon -->
+  <link rel="stylesheet" href="css/simple-line-icons.css">
+  <!-- Themify Icon -->
+  <link rel="stylesheet" href="css/themify-icons.css">
+  <!-- Hover Effects -->
+  <link rel="stylesheet" href="css/set1.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--============================= HEADER =============================-->
+  <div class="nav-menu">
+    <div class="bg transition">
+      <div class="container-fluid fixed">
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg ">
+              <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo-white.png" /></a>
+              <span class="name">&nbsp;SCM Aerial Database</span>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-menu"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link nav-link-active text-bolder" href="#">
+                      Map
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      Cart
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      My Gallery
+                    </a>
+                  </li>
+                  <li class="dropdown nav-item">
+                    <a class="nav-link dropbtn" href="#">My Account</a>
+                    <div class="dropdown-content">
+                      <a href="#">User name</a>
+                      <a href="#">Profile</a>
+                      <a href="#">Payment details</a>
+                      <a href="#">History</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--//END HEADER -->
+    <!--============================= DETAIL =============================-->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 responsive-wrap page-header">
+            <h2>Search the Map</h2>
+          </div>
+
+        </div>
+      </div>
+      <div>
+        <div class="map-wrap light-bg">
+          <form class="form-wrap mt-4">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <select class="btn-group2 selection">
+                <option>Canadaa</option>
+                <option>US</option>
+              </select>
+              <select class="btn-group2 selection">
+                <option>British Columbia</option>
+                <option>Ontrio</option>
+                <option>Quebec</option>
+                <option>Alberta</option>
+                <option>Saskatchewan</option>
+              </select>
+              <select class="btn-group2 selection">
+                <option>Lower Mainland </option>
+                <option>Thompson Okanagan </option>
+                <option>Vancouver Island </option>
+              </select>
+              <select class="btn-group2 selection">
+                <option>Vancouver</option>
+                <option>Burnaby</option>
+                <option>Abbotsford</option>
+              </select>
+              <select class="btn-group2 selection">
+                
+                <option>Select the Neighbourhood </option>
+                 
+                <option>Kitsilano</option>
+                <option>Downtown Vancouver</option>
+                <option>Railtown</option>
+                <option>Mount Pleasant</option>
+                <option>False Creek Flats</option>
+                <option>Broadway Corridor</option>
+              </select>
+              <button type="submit" class="btn-form search-btn">Search<i class="pe-7s-angle-right"></i></button>
+            </div>
+          </form>
+          <div class="map-fix">
+            <!-- data-toggle="affix" -->
+            <!-- Google map will appear here! Edit the Latitude, Longitude and Zoom Level below using data-attr-*  -->
+            <div id="map" data-lat="49.282730" data-lon="-123.120735" data-zoom="14"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row result-header">
+            <div class="col-md-12 mb-3">
+              <h4 class="result-location">Kitsilano <span class="text-grey text-thin">(134)</span> </h4>
+            </div>
+            <div class="col-md-12 ">
+              <div class="detail-filter">
+                <p>Sorted by</p>
+                <form class="filter-dropdown">
+                  <select class="custom-select mb-sm-0" id="inlineFormCustomSelect">
+                    <option selected>Popular</option>
+                    <option value="1">Latest</option>
+                    <option value="2">Price</option>
+                  </select>
+                </form>
+<!--                <span class="icon-arrow-left back"></span>-->
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="row image-gallery">
+              <div class="col-md-3 image-box">
+                <a href="detail.html">
+                  <img src="images/kits1.jpg" class="img-fluid" alt="#">
+                  <div class="fav-icon">
+                    <span class="ti-bookmark"></span>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3 image-box">
+                <a href="detail.html">
+                  <img src="images/kits2.jpg" class="img-fluid" alt="#">
+                  <div class="fav-icon">
+                    <span class="ti-bookmark"></span>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3 image-box">
+                <a href="detail.html">
+                  <img src="images/kits3.jpg" class="img-fluid" alt="#">
+                  <div class="fav-icon">
+                    <span class="ti-bookmark"></span>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3 image-box">
+                <a href="detail.html">
+                  <img src="images/kits4.jpg" class="img-fluid" alt="#">
+                  <div class="fav-icon">
+                    <span class="ti-bookmark"></span>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3 image-box">
+                <a href="detail.html">
+                  <img src="images/kits5.jpg" class="img-fluid" alt="#">
+                  <div class="fav-icon">
+                    <span class="ti-bookmark"></span>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3 image-box">
+                <a href="detail.html">
+                  <img src="images/kits1.jpg" class="img-fluid" alt="#">
+                  <div class="fav-icon">
+                    <span class="ti-bookmark"></span>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3 image-box">
+                <a href="detail.html">
+                  <img src="images/kits1.jpg" class="img-fluid" alt="#">
+                  <div class="fav-icon">
+                    <span class="ti-bookmark"></span>
+                  </div>
+                </a>
+              </div>
+               <div class="col-md-3 image-box">
+                <a href="detail.html">
+                  <img src="images/kits1.jpg" class="img-fluid" alt="#">
+                  <div class="fav-icon">
+                    <span class="ti-bookmark"></span>
+                  </div>
+                </a>
+              </div>
+               <div class="col-md-3 image-box">
+                <a href="detail.html">
+                  <img src="images/kits1.jpg" class="img-fluid" alt="#">
+                  <div class="fav-icon">
+                    <span class="ti-bookmark"></span>
+                  </div>
+                </a>
+              </div>
+               <div class="col-md-3 image-box">
+                <a href="detail.html">
+                  <img src="images/kits1.jpg" class="img-fluid" alt="#">
+                  <div class="fav-icon">
+                    <span class="ti-bookmark"></span>
+                  </div>
+                </a>
+              </div>
+               <div class="col-md-3 image-box">
+                <a href="detail.html">
+                  <img src="images/kits1.jpg" class="img-fluid" alt="#">
+                  <div class="fav-icon">
+                    <span class="ti-bookmark"></span>
+                  </div>
+                </a>
+              </div>
+               <div class="col-md-3 image-box">
+                <a href="detail.html">
+                  <img src="images/kits1.jpg" class="img-fluid" alt="#">
+                  <div class="fav-icon">
+                    <span class="ti-bookmark"></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--//END DETAIL -->
+    <!--============================= FOOTER =============================-->
+    <footer class="main-block dark-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright">
+              <p>&copy;SCM Aerial Database 
+              </p>
+              <ul>
+                <li><a href="#"><span class="ti-facebook"></span></a></li>
+                <li><a href="#"><span class="ti-twitter-alt"></span></a></li>
+                <li><a href="#"><span class="ti-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--//END FOOTER -->
+
+
+
+
+    <!-- jQuery, Bootstrap JS. -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <script>
+      $(".map-icon").click(function() {
+        $(".map-fix").toggle();
+      });
+    </script>
+    <script>
+      // Want to customize colors? go to snazzymaps.com
+      function myMap() {
+        var query = "vancouver";
+        var maplat = $('#map').data('lat');
+        var maplon = $('#map').data('lon');
+        var mapzoom = $('#map').data('zoom');
+        // Styles a map in night mode.
+        var map = new google.maps.Map(document.getElementById('map'), {
+
+          center: {
+            lat: 49.282730,
+            lng: -123.120735
+          },
+          zoom: mapzoom,
+          scrollwheel: false
+        });
+        var marker = new google.maps.Marker({
+          position: {
+            lat: 49.282730,
+            lng: -123.120735
+          },
+          map: map,
+          title: 'We are here!'
+        });
+        console.log("dd", maplat);
+
+      };
+
+      document.getElementById("75-west").addEventListener("mouseover", function() {
+        //                 alert("Dd");
+        var mapzoom = $('#map').data('zoom');
+        var map = new google.maps.Map(document.getElementById('map'), {
+
+          center: {
+            lat: 49.170647,
+            lng: -123.140583
+          },
+          zoom: mapzoom,
+          scrollwheel: false
+        });
+        var marker = new google.maps.Marker({
+          position: {
+            lat: 49.170647,
+            lng: -123.140583
+          },
+          map: map,
+          title: 'We are here!'
+        });
+        console.log("dd", );
+
+
+
+      });
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHOwlbhg0qCI4qe2WBXcSugn5l9bnn4Bk&callback=myMap" async defer>
+    </script>
+</body>
+
+</html>

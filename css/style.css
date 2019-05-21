@@ -41,9 +41,9 @@ select{
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	border:1px solid #BEBEBE;
-	padding: 10px;
-	margin:0px;
+/*	border:1px solid #BEBEBE;*/
+	padding: 30px;
+/*	margin:0px;*/
 	-webkit-transition: all 0.30s ease-in-out;
 	-moz-transition: all 0.30s ease-in-out;
 	-ms-transition: all 0.30s ease-in-out;
@@ -122,7 +122,7 @@ option{
   margin-left: 1px;
   min-width: 140px !important;
   padding: 13px 0px !important;
-  
+  text-align: center;
 }
 select{
   padding:10px !important;
@@ -204,10 +204,14 @@ select{
 }
 
 .result-header {
-  padding: 30px 15px;
+  padding: 40px 15px 10px;
 }
 .text-grey{
   color: rgba(0,0,0,0.5);
+}
+.text-thin{
+  font-family: Idealsans;
+  font-size: 1.4rem;
 }
 select, form, .btn-group, .btn-group2, .selection, option{
   border-radius: 0 !important;
@@ -743,7 +747,7 @@ p {
 }
 
 .btn-group select {
-  width: 100%;
+/*  width: 100%;*/
   border-radius: 0 !important;
   background-color: rgba(255,255,255,1) !important;
 /*    -webkit-appearance: none !important;*/
@@ -796,9 +800,14 @@ p {
 
 @media (max-width: 576px) {
   .btn-group2 {
-    width: 100%;
+    width: calc(50% - 4px);
     margin: 0 0 10px;
-    padding: 17px;
+    padding: 0px !important;
+    line-height: inherit;
+  }
+  .selection{
+    padding: 40px ;
+    height: 40px;
   }
 }
 
@@ -1281,10 +1290,7 @@ footer {
   padding: 100px 0 20px;
   border-bottom: 1px solid #e7e7e7;
 }
-select{
-  padding: 0;
-  margin: 0;
-}
+
 .detail-filter{
   float: right;
 }
@@ -1551,7 +1557,10 @@ select{
     width: 100%;
   }
 }
-
+.custom-select{
+  min-width: 90px;
+  padding: 0
+}
 .custom-checkbox {
   color: rgba(0,0,0,0.75);
   font-size: 18px;
