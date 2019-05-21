@@ -12,7 +12,7 @@ Author: Surjith S M
 @import url('https://fonts.googleapis.com/css?family=Nunito:600,700,800,900|Roboto');
 .form-style-1 {
 	margin:12px auto;
-	max-width: 500px;
+	max-width: 650px;
 	padding: 20px 20px 20px 20px;
 	font: 14px IdealSans
 }
@@ -69,8 +69,8 @@ select{
 	border: 1px solid rgba(0,0,0,0.8);
 }
 .form-style-1 .field-divided{
-	width: 49%;
-		display: inline-block;
+	width: calc(50% - 2px);
+    display: inline-block;
 }
 
 .form-style-1 .field-long{
@@ -78,6 +78,8 @@ select{
 }
 .form-style-1 .field-select{
 	width: 100%;
+    height: 40px;
+    border-radius: 0px !important;
 }
 .form-style-1 .field-textarea{
 	height: 100px;
@@ -221,7 +223,6 @@ select, form, .btn-group, .btn-group2, .selection, option{
     text-align: center;
   }
 }
-
 .result-location {
   font-family: IdealSansbold !important;
   color: rgba(0, 0, 0, 0.7);
@@ -229,6 +230,33 @@ select, form, .btn-group, .btn-group2, .selection, option{
 .price{
   font-family: IdealSansbold;
   font-size: 1.5rem;
+  display: inline-block;
+}
+.no-padding{
+  padding: 0;
+}
+.red-bg{
+  background-color: red;
+}
+.order-img-name{
+/*  font-family:IdealSansbold;*/
+  font-size: 1.2rem;
+  margin: 0px;
+  padding: 0;
+}
+.order-img-info{
+color: rgba(0,0,0,0.6);
+}
+.order-checkbox{
+  padding-top: 130%;
+}
+.price-small{
+  font-size: 1.2rem;
+  text-align: right;
+  padding-right: 20px;
+}
+.right{
+  float: right;
 }
 .license{
   color:rgba(64, 150, 153, 0.9) !important;
@@ -859,10 +887,28 @@ p {
   text-align: center;
   margin: 0 0 50px;
 }
-
+.big-p{
+  font-size: 22px; 
+  color:rgba(0,0,0,0.6);
+  padding: 0 30px;
+}
+.map-feature{
+  padding-top:17%;
+}
 @media (max-width: 768px) {
   .styled-heading {
     margin: 0 0 30px;
+  }
+  .map-feature{
+    padding-top: 20px;
+  }
+  .big-p{
+    font-size:19px;
+  }
+}
+@media (max-width: 576px) {
+  .map-feature{
+    padding-top: 20px;
   }
 }
 
@@ -1545,10 +1591,7 @@ select{
   padding: 20px 0px;
 }
 
-.booking-checkbox_wrap h5 {
-  color: rgba(0,0,0,.7);
-  font-weight: 400;
-}
+
 
 .booking-checkbox {
   color: #737882;
